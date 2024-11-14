@@ -1,0 +1,125 @@
+.container {
+    padding: 0;
+    max-width: fit-content;
+}
+.top {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 0.9rem;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+.adminform {
+    padding-left: 0.5rem;
+
+    // padding-right: 0.5rem;
+    .Customise {
+        background: linear-gradient(87deg, #f5365c 0, #f56036 100%) !important;
+
+    }
+
+    .Import {
+        // background: linear-gradient(87deg, #f5365c 0, #f56036 100%) !important;
+        background: linear-gradient(45deg, #7878e8, #8787e5) !important;
+
+    }
+
+    button {
+        //  background-color: #4CAF50;
+        opacity: 0.8;
+        color: white;
+        margin-left: 10px;
+        margin-right: 5px;
+        border-radius: 10px;
+        font-size: 15px;
+
+    }
+}
+
+.admission {
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    /* Centers vertically */
+}
+
+.bg-gradient-blue {
+    width: 20px;
+    height: 7px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #007bff, #0056b3); // Bootstrap blue gradient
+}
+
+.bg-gradient-gray {
+    width: 20px;
+    height: 7px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #e0e0e0, #a0a0a0); // Gray gradient
+}
+
+.f-12 {
+    font-size: 12px;
+}
+
+
+label {
+    margin-left: 0.2rem;
+}
+
+.input-container {
+    position: relative;
+    margin: 20px;
+
+    .input-label {
+        position: absolute;
+        top: -10px;
+        left: 20px;
+        //   background-color: #8a8a8a;
+        background: linear-gradient(to right, #e0e0e0, #a0a0a0);
+        color: white;
+        padding: 2px 10px;
+        border-radius: 20px;
+        font-size: 12px;
+    }
+
+    .Required {
+        background: linear-gradient(to right, #007bff, #0056b3);
+    }
+
+    .input-field {
+        width: 22rem;
+        padding: 10px 20px;
+        border: 2px solid #d1d1e0;
+        border-radius: 30px;
+        font-size: 18px;
+        color: #8a8a8a;
+        cursor: pointer;
+    }
+}
+
+.text-center {
+    .reset {
+        border-radius: 20px;
+        padding: 10px;
+        width: 150px;
+        // background: #0056b3;
+        background: linear-gradient(45deg, #FFB64D, #ffcb80)
+    }
+    .submit{
+
+            border-radius: 20px;
+            padding: 10px;
+            width: 150px;
+            color: white;
+            // background: #94bfb0;
+            background: linear-gradient(45deg, #4d4cac, #5a59ab) !important;
+
+    }
+
+    .reset:hover,.submit:hover{
+        opacity: 0.9;
+    }
+}

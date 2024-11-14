@@ -1,0 +1,297 @@
+<div class="container">
+    <div class="row padding top">
+      <div class="col-6 text-left" style="display: flex; ">
+        <strong style="border-right:1px solid #777;padding-right:10px;margin-right:10px;">Students </strong>
+        <span><i class="fa-solid fa-house"></i></span>
+        <h6> - New Staff </h6>
+      </div>
+      <div class="col-6 adminform text-end">
+        <button type="button" class="btn Customise  btn-sm">
+          <i class="far fa-pen-to-square"></i>
+          Customise
+        </button>
+        <!-- <button type="button" class="btn Import btn-sm">
+          <i class="fa-solid fa-download"></i>
+          Import Student
+        </button> -->
+      </div>
+    </div>
+    <div class="admission">
+      <h3 class="text-center mt-4 w-100" style="line-height: 20px;">
+        Admission Form
+        <br>
+        <div class="bg-gradient-blue d-inline-block"></div>
+        <span class="f-12 text-primary fw-light">Required*</span>
+        <div class="bg-gradient-gray d-inline-block ms-2"></div>
+        <span class="f-12 text-muted fw-light">Optional</span>
+      </h3>
+  
+  
+    </div>
+  
+
+    <hr>
+    <!-- Student Section -->
+    <div class="contain mt-2">
+      <div class="section-title d-flex align-items-center mb-4">
+        <i class="fas fa-info-circle me-2"></i>
+        <span class="h5">Basic Information</span>
+      </div>
+      <form>
+        <div class="row g-1">
+          <div class="col-12 col-md-4">
+            <div class="input-container">
+              <label for="studentName" class="input-label Required">Employee Name <span
+                  class="text-danger">*</span></label>
+              <input type="text" class="form-control input-field" id="studentName" placeholder="Name of Employee" [(ngModel)]="_employeeForm.EmployeeName" [ngModelOptions]="{ standalone: true }">
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="input-container">
+              <label for="mobileNo" class="input-label"><span>Mobile No. for SMS/WhatsApp</span></label>
+              <input type="text" class="form-control input-field" id="mobileNo" placeholder="e.g +91 xxxxxxxxxx" [(ngModel)]="_employeeForm.EmployeeMobileNumber" [ngModelOptions]="{ standalone: true }">
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="input-container">
+              <label for="classSelect" class="input-label Required">Employee Role<span
+                  class="text-danger">*</span></label>
+              <select class="form-select input-field" id="classSelect" [(ngModel)]="_employeeForm.EmployeeRole" [ngModelOptions]="{ standalone: true }">
+                <option value="">Employee Role</option>
+                <option value="">Principal</option>
+                <option value="">Management Staff</option>
+                <option value="">Teacher</option>
+                <option value="">Accountant</option>
+                <option value="">Other</option>
+
+              </select>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="input-container">
+              <label for="pictureUpload" class="input-label"><span>Picture - Optional</span></label>
+              <input type="file" class="form-control input-field" id="pictureUpload">
+              <div class="file-info mt-1">
+                <!-- Optional file info -->
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="input-container">
+              <label for="admissionDate" class="input-label  Required">Date of Joining <span
+                  class="text-danger">*</span></label>
+              <input type="date" class="form-control input-field" id="admissionDate" placeholder="19-10-2024" [(ngModel)]="_employeeForm.EmployeeJoiningDate" [ngModelOptions]="{ standalone: true }">
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="input-container">
+              <label for="discount" class="input-label Required">Monthly Salary<span
+                  class="text-danger">*</span></label>
+              <input type="text" class="form-control input-field" id="discount" placeholder="Monthly Salary" [(ngModel)]="_employeeForm.EmployeeSalary" [ngModelOptions]="{ standalone: true }">
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+    <hr>
+    <!-- Other Information -->
+    <div class="contain mt-2">
+      <div class="section-title d-flex align-items-center">
+        <i class="fas fa-info-circle"></i> <strong> Other Information</strong>
+      </div>
+      <div class="row g-1">
+        <div class="col-12 col-md-4">
+          <div class="input-container">
+            <label class="input-label" for="FatherName">Father / Husband Name</label>
+            <input type="text" class="form-control input-field" id="FatherName" placeholder="Father / Husband Name" [(ngModel)]="_employeeForm.EmployeeHusband" [ngModelOptions]="{ standalone: true }">
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="input-container">
+            <label class="input-label" for="Gender">Gender</label>
+            <select class="form-select input-field" id="Gender" [(ngModel)]="_employeeForm.EmployeeGender" [ngModelOptions]="{ standalone: true }">
+              <option>Select</option>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="input-container">
+            <label class="input-label" for="Experience">Experience</label>
+            <input type="text" class="form-control input-field" id="Experience" placeholder="Experience" [(ngModel)]="_employeeForm.EmployeeExperience" [ngModelOptions]="{ standalone: true }">
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="input-container">
+            <label class="input-label" for="NationalID">NationalID</label>
+            <input type="text" class="form-control input-field" id="NationalID" placeholder="NationalID" [(ngModel)]="_employeeForm.EmployeeNationalID" [ngModelOptions]="{ standalone: true }">
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="input-container">
+            <label class="input-label" for="Religion">Religion</label>
+            <select class="form-select input-field" id="Religion" [(ngModel)]="_employeeForm.EmployeeReligion" [ngModelOptions]="{ standalone: true }">
+              <option>Select</option>
+              <option>Hindhu</option>
+              <option>Muslim</option>
+              <option>Christian</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="input-container">
+            <label class="input-label" for="Email Address">Email Address</label>
+            <input type="text" class="form-control input-field" id="Email Address" placeholder="Email Address" [(ngModel)]="_employeeForm.EmployeeEmail" [ngModelOptions]="{ standalone: true }">
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="input-container">
+            <label class="input-label" for="Education">Education</label>
+            <input type="text" class="form-control input-field" id="Education" placeholder="Education" [(ngModel)]="_employeeForm.EmployeeEducation" [ngModelOptions]="{ standalone: true }">
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="input-container">
+            <label class="input-label" for="Blood Group">Blood Group</label>
+            <select class="form-select input-field" id="Blood Group" [(ngModel)]="_employeeForm.EmployeeBloodGroup" [ngModelOptions]="{ standalone: true }">
+              <option>Blood Group</option>
+              <option>A+</option>
+              <option>A-</option>
+              <option>B+</option>
+              <option>B-</option>
+              <option>O+</option>
+              <option>O-</option>
+              <option>AB+</option>
+              <option>AB-</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="input-container">
+            <label class="input-label" for="dob">Date Of Birth</label>
+            <input type="text" class="form-control input-field" id="dob" placeholder="Date Of Birth" [(ngModel)]="_employeeForm.EmployeeDob" [ngModelOptions]="{ standalone: true }">
+          </div>
+        </div>
+        <div class="col-12 col-md-8">
+          <div class="input-container">
+            <label class="input-label" for="address">Address</label>
+            <input type="text" class="form-control input-field" id="address" placeholder="Address" [(ngModel)]="_employeeForm.EmployeeAddress" [ngModelOptions]="{ standalone: true }">
+          </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Father Details -->
+    <!-- <div class="contain mt-2">
+      <div class="section-title d-flex align-items-center">
+        <i class="fas fa-info-circle"></i> <strong>3 Father/Guardian Information</strong>
+      </div>
+      <div class="row g-1">
+        <div class="col-12 col-md-4">
+          <div class="input-container">
+            <label class="input-label" for="fatherName">Father Name</label>
+            <input type="text" class="form-control input-field" id="fatherName" placeholder="Father Name">
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="input-container">
+            <label class="input-label" for="fatherNationalID">Father NationalID</label>
+            <input type="text" class="form-control input-field" id="fatherNationalID" placeholder="Father NationalID">
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="input-container">
+            <label class="input-label" for="occupation">Occupation</label>
+            <input type="text" class="form-control input-field" id="occupation" placeholder="Occupation">
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="input-container">
+            <label class="input-label" for="education">Education</label>
+            <input type="text" class="form-control input-field" id="education" placeholder="Education">
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="input-container">
+            <label class="input-label" for="mobileNumber">Mobile Number</label>
+            <input type="text" class="form-control input-field" id="mobileNumber" placeholder="Mobile Number">
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="input-container">
+            <label class="input-label" for="profession">Profession</label>
+            <input type="text" class="form-control input-field" id="profession" placeholder="Profession">
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="input-container">
+            <label class="input-label" for="income">Income</label>
+            <input type="text" class="form-control input-field" id="income" placeholder="Income">
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr> -->
+  
+    <!-- Mother Details -->
+    <!-- <div class="contain mt-2">
+      <div class="section-title d-flex align-items-center">
+        <i class="fas fa-info-circle"></i> <strong>4 Mother Information</strong>
+      </div>
+      <div class="row g-1">
+        <div class="col-12 col-md-4">
+          <div class="input-container">
+            <label class="input-label" for="motherName">Mother Name</label>
+            <input type="text" class="form-control input-field" id="motherName" placeholder="Mother Name">
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="input-container">
+            <label class="input-label" for="motherNationalID">Mother NationalID</label>
+            <input type="text" class="form-control input-field" id="motherNationalID" placeholder="Mother NationalID">
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="input-container">
+            <label class="input-label" for="occupation">Occupation</label>
+            <input type="text" class="form-control input-field" id="occupation" placeholder="Occupation">
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="input-container">
+            <label class="input-label" for="education">Education</label>
+            <input type="text" class="form-control input-field" id="education" placeholder="Education">
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="input-container">
+            <label class="input-label" for="mobileNumber">Mobile Number</label>
+            <input type="text" class="form-control input-field" id="mobileNumber" placeholder="Mobile Number">
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="input-container">
+            <label class="input-label" for="profession">Profession</label>
+            <input type="text" class="form-control input-field" id="profession" placeholder="Profession">
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="input-container">
+            <label class="input-label" for="income">Income</label>
+            <input type="text" class="form-control input-field" id="income" placeholder="Income">
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr> -->
+    <div class="text-center">
+      <button class="btn b btn-lg reset" type="reset">
+        <i class="fa-solid fa-arrow-rotate-right"></i> Reset
+      </button>
+      <button class="btn  btn-lg submit ms-2" type="submit" id="submitBtn" name="submit" (click)="onSubmit()">
+        <i class="fa-solid fa-check"></i> Submit
+      </button>
+    </div>
+  
+  </div>

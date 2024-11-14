@@ -1,0 +1,46 @@
+.container {
+    padding: 0;
+    max-width:100%;
+}
+.card{
+
+    // width: 15rem;
+    border-radius: 10px;
+    padding: 2%;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+    .row{
+       padding: 2%;
+    }
+}
+.card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+i{
+    font-size: 1.5rem;
+}
+.textfont{
+    
+    font-size: 25px;
+}
+
+.students{
+    background: linear-gradient(45deg, #4d4cac, #5a59ab) !important;
+    color: white;
+}
+
+.Employees{
+    background: linear-gradient(45deg, #9698d6, #a9abdb) !important;
+    color: white;
+}
+.revenue{
+background: linear-gradient(45deg, #ff808b, #f79099) !important;
+color: white;
+}
+
+
+.profit {
+    background: linear-gradient(45deg, #5e81f4, #7191f7) !important;
+    color: white;
+}

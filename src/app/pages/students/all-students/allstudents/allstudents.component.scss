@@ -1,0 +1,77 @@
+.container {
+  padding: 0;
+  max-width:100%;
+}
+.top {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 0.9rem;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+.adminform {
+  padding-left: 0.5rem;
+
+  // padding-right: 0.5rem;
+  .Customise {
+    background: linear-gradient(87deg, #f5365c 0, #f56036 100%) !important;
+
+  }
+
+  .Import {
+    // background: linear-gradient(87deg, #f5365c 0, #f56036 100%) !important;
+    background: linear-gradient(45deg, #7878e8, #8787e5) !important;
+
+  }
+
+  button {
+    //  background-color: #4CAF50;
+    opacity: 0.8;
+    color: white;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+
+  }
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    // width: 50%;
+    padding: 20px;
+    margin: 0 auto; // Center the card
+    justify-content: center;
+    align-items: center;
+  
+    img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    h2 {
+      font-size: 18px;
+      margin: 10px 0 5px;
+      color: #333;
+    }
+  
+    p {
+      font-size: 14px;
+      color: #777;
+      margin: 0 0 15px;
+    }
+  
+    .btn {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+    }
+  }
+  
